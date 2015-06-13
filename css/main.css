@@ -377,6 +377,18 @@ body {
 .primary-nav a:hover {
   color: #fff;
 }
+.slider {
+  position: relative;
+}
+.slider .slide {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider .slide li {
+  height: 360px;
+  position: relative;
+}
 /* Typography
    ========================= */
 p {

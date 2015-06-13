@@ -1,0 +1,388 @@
+@import url(../font/MyriadPro-LightSemiExt/MyriadPro-LightSemiExt.css);
+@import url(../font/MyriadPro-Regular/MyriadPro-Regular.css);
+
+// --------- var ------------
+
+@font-MRegular: MyriadPro-Regular;
+@font-MLight: MyriadPro-LightSemiExt;
+
+@container-padding : 75px;
+
+
+@import "mixing.less";
+
+/* Base styles
+   ========================= */
+
+* {
+	webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #333;
+}
+
+html {
+	font-size: 13px;
+	min-height: 100%;
+	position: relative;
+	line-height: 1.3846;
+	font-family: @font-MRegular;
+}
+
+body {
+	margin-bottom: 415px;
+}
+
+.page {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding: 0 @container-padding;
+}
+
+
+// Шапка -------
+
+.header {
+	color: #fff;
+	height: 108px;
+	background: url("../img/header__bg.jpg") top center no-repeat;
+
+	.header__logo {
+		top: 25px;
+		width: 197px;
+		height: 60px;
+		cursor: pointer;
+		position: absolute;
+		left: @container-padding;
+		background: url("../img/header__logo.png") 0 0 no-repeat;
+	}
+
+	.header__phone {
+		top: 50px;
+		color: #fff;
+		height: 22px;
+		padding-left: 20px;
+		position: absolute;
+		right: @container-padding;
+		font: 22px/22px @font-MLight;
+		background: url("../img/header__phone.png") left center no-repeat;
+	}
+}
+
+
+// Футер ------------
+
+.footer {
+	color: #c1c8d0;
+	bottom: 0;
+	width: 100%;
+	height: 413px;
+	position: absolute;
+
+	.footer__top {
+		height: 286px;
+		background: url("../img/footer__bg.jpg") top center no-repeat;
+
+		.footer__title {
+			color: #fff;
+			text-transform: uppercase;
+			font: 18px/64px @font-MRegular;
+		}
+
+		.footer__text {
+			height: 170px;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	.footer__bottom {
+		height: 91px;
+		background: #071837;
+	}
+
+	.footer__about {
+		float: left;
+		width: 340px;
+	}
+
+	.footer__social {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			width: 35px;
+			height: 34px;
+			margin-right: 7px;
+			background: url("../img/social__bg.png") 0 0 no-repeat;
+
+			&:hover {
+				background-position: 0 -34px;
+			}
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			background: url("../img/social__icons.png") -500px 50% no-repeat;
+
+			&.vk {
+				background-position: 7px 50%;
+			}
+			&.fb {
+				background-position: -35px 50%;
+			}
+			&.tw {
+				background-position: -76px 50%;
+			}
+			&.ok {
+				background-position: -117px 50%;
+			}
+			&.rss {
+				background-position: -158px 50%;
+			}
+			&.youtube {
+				background-position: -200px 50%;
+			}
+			&.pen {
+				background-position: -241px 50%;
+			}
+			&.mail {
+				background-position: -281px 50%;
+			}
+		}
+	}
+
+	.footer__contact {
+		float: left;
+		width: 275px;
+		margin-left: 135px;
+
+		ul {
+			padding: 0;
+			list-style: none;
+			margin: 0 0 25px 0;
+		}
+
+		li {
+			color: #c1c8d0;
+			font-size: 12px;
+			line-height: 16px;
+
+			&.footer__name {
+				font-size: 13px;
+			}
+
+			&.footer__phone {
+				color: #fff;
+				font-size: 14px;
+				padding-left: 20px;
+				background: url("../img/icon__phone.png") left center no-repeat;
+			}
+
+			&.footer__email {
+				color: #fff;
+				font-size: 14px;
+				padding-left: 20px;
+				background: url("../img/icon__mail.png") left center no-repeat;
+			}
+		}
+	}
+
+	.footer__map {
+		float: right;
+		width: 265px;
+		padding-top: 54px;
+
+		a {
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+
+	.footer__copy {
+		width: 50%;
+		float: left;
+		color: #fff;
+		font-size: 14px;
+		line-height: 18px;
+		padding-top: 22px;
+
+		span {
+			display: block;
+		}
+
+		a {
+			color: #fff;
+			margin-left: 12px;
+			display: inline-block;
+			text-decoration: none;
+		}
+	}
+
+	.footer__right {
+		float: right;
+		width: 265px;
+		padding-top: 15px;
+
+		.footer__form {
+			height: 22px;
+			display: block;
+			margin-bottom: 14px;
+			border: 1px solid #a1a0a0;
+
+			input[type="text"] {
+				margin: 0;
+				color: #999;
+				float: left;
+				width: 238px;
+				height: 20px;
+				border: none;
+				outline: none;
+				display: block;
+				font-size: 12px;
+				padding: 2px 7px;
+				line-height: 16px;
+				font-style: italic;
+				background-image: none;
+				background: transparent;
+			}
+
+			.btn-footer {
+				width: 23px;
+				float: right;
+				height: 20px;
+				border: none;
+				outline: none;
+				display: block;
+				background: transparent;
+				border-left: 1px solid #a1a0a0;
+
+				&.btn-search {
+					background: url("../img/icon__search.png") center center no-repeat;
+				}
+				&.btn-rss {
+					background: url("../img/icon__rss.png") center center no-repeat;
+				}
+			}
+		}
+	}
+}
+
+
+// Навигация -------
+
+.primary-nav {
+	height: 36px;
+	border: 1px solid #b4b2b2;
+	background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU0ZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e4e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e4e4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e4e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e4e4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e4e4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e4e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e4e4',GradientType=0 ); /* IE6-8 */
+
+	ul {
+		padding: 0;
+		width: 100%;
+		height: 34px;
+		display: table;
+		list-style: none;
+		position: relative;
+		margin: -1px 0 0 0;
+	}
+
+	li {
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		display: table-cell;
+		font-family: @font-MLight;
+		border: 1px solid transparent;
+
+		&:hover,
+		&.active {
+			color: #fff;
+			border-color: #071c40;
+
+			background: #325271; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyNTI3MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMzE3M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  #325271 0%, #03173b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#325271), color-stop(100%,#03173b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #325271 0%,#03173b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #325271 0%,#03173b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #325271 0%,#03173b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #325271 0%,#03173b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#325271', endColorstr='#03173b',GradientType=0 ); /* IE6-8 */
+		}
+
+		&.active a {
+			color: #fff;
+		}
+	}
+
+	a {
+		width: 100%;
+		height: 100%;
+		color: #0b244f;
+		display: inline-block;
+		text-decoration: none;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+}
+
+// Контент -------
+
+.content {
+
+}
+
+/* Typography
+   ========================= */
+
+h1, h2, h3, h4 {
+
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+a {
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+

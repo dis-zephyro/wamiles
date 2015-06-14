@@ -367,12 +367,11 @@ body {
 	.slide {
 		margin: 0;
 		padding: 0;
-		list-style: none;
+	}
 
-		li {
-			height: 360px;
-			position: relative;
-		}
+	.slider__item  {
+		height: 360px;
+		position: relative;
 	}
 
 	.slider__content {
@@ -423,6 +422,36 @@ body {
 		&.slide__next {
 			right: 0;
 			background: #666 url("../img/slider__nav.png") -30px 0 no-repeat;
+		}
+	}
+
+	.slick-dots {
+		margin: 0;
+		padding: 0;
+		width: 15px;
+		right: 15px;
+		bottom: 45px;
+		list-style: none;
+		position: absolute;
+
+		li {
+			width: 15px;
+			height: 15px;
+			overflow: hidden;
+			margin-bottom: 4px;
+			position: relative;
+			background: url("../img/slider__pagination.png") 0 0 no-repeat;
+
+			&.slick-active {
+				background-position: 0 -15px;
+			}
+
+			button {
+				border: none;
+				outline: none;
+				padding-left: 30px;
+				background: transparent;
+			}
 		}
 	}
 

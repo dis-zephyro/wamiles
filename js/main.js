@@ -1,6 +1,7 @@
 // Слайдеры
 
 $('.slide').slick({
+    dots: true,
     arrows: false,
     autoplay: false,
     slidesToShow: 1,

@@ -70,18 +70,22 @@
 .clearfix:before,
 .clearfix:after,
 .container:before,
-.container:after {
+.container:after,
+.form-group:before,
+.form-group:after {
 	content: " "; /* 1 */
 	display: table; /* 2 */
 }
 
 .clearfix:after,
-.container:after {
+.container:after,
+.form-group:after{
 	clear: both;
 }
 
 .clearfix,
-.container {
+.container,
+.form-group {
 	*zoom: 1;
 }
 

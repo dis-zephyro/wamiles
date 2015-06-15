@@ -274,18 +274,18 @@
                 <div class="callback__form">
                     <div class="container">
                         <h2>ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК</h2>
-                        <form class="form__callback">
-                            <div class="form-group form-group-xs">
+                        <form class="form form__callback">
+                            <div class="form-group form-group-xs clearfix">
                                 <label for="name"><span>Как к Вам обращаться:</span></label>
-                                <input type="text" id="name" name="name">
+                                <input type="text" id="name" name="name" data-validation="required"  data-validation-error-msg="Укажите ваше имя">
                             </div>
                             <div class="form-group">
                                 <label for="tel">Ваш телефон:</label>
-                                <input type="text" id="tel" name="tel" class="form__tel">
+                                <input type="text" id="tel" name="tel" class="form__tel" data-validation="length" data-validation-length="min6" data-validation-error-msg="Введите телефон в формате +7 *** *** ** **">
                             </div>
                             <div class="form-group">
                                 <label for="date">Желательная дата посещения салона:</label>
-                                <input type="text" id="date" name="date" class="form__date">
+                                <input type="text" id="date" name="date" class="form__date" data-validation="date" data-validation-format="dd.mm.yyyy" data-validation-error-msg="Укажите правильную дату">
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-xs">Отправить</button>
@@ -466,6 +466,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
         <script src="js/vendor/jquery.html5-placeholder-shim.js"></script>
+        <script src="js/vendor/jquery.form-validator/jquery.form-validator.min.js"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/jquery.maskedinput.min.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>

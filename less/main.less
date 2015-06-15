@@ -905,8 +905,8 @@ body {
 }
 
 .form__callback {
-	width: 523px;
-	padding-left: 40px;
+	width: 410px;
+	margin-left: 40px;
 
 	label {
 		color: #666;
@@ -921,12 +921,9 @@ body {
 	input[type="text"] {
 		width: 240px;
 		height: 30px;
-		outline: none;
-		background: #fff;
 		font-size: 14px;
 		line-height: 20px;
 		padding: 4px 10px;
-		border: 1px solid #03173a;
 
 		&.form__date {
 			width: 118px;
@@ -949,6 +946,42 @@ body {
 	}
 }
 
+.form-error {
+	top: 2px;
+	right: -380px;
+	width: 365px;
+	color: #ff3333;
+	font-size: 14px;
+	line-height: 18px;
+	position: absolute;
+	padding: 3px 0 3px 33px;
+	background: url("../img/icon__error.png") left center no-repeat;
+}
+
+.has-success:before {
+	top: 0;
+	width: 23px;
+	height: 23px;
+	right: -38px;
+	content: "";
+	position: absolute;
+	background: url("../img/icon__valid.png") center no-repeat;
+}
+
+.form {
+	input[type="text"] {
+		color: #000;
+		outline: none;
+		display: block;
+		background: #fff;
+		position: relative;
+		border: 1px solid #03173a;
+
+		&.valid {
+			border-color: #85d778;
+		}
+	}
+}
 
 .ui-widget-header {
 	border-color: #234372;

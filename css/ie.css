@@ -1,0 +1,8 @@
+.gradient,
+.gradient li:hover,
+.gradient li.active,
+.showcase ul a:hover .showcase__cat,
+.blog-nav a,
+.blog-nav a.active {
+	filter: none;
+}

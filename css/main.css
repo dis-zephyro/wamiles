@@ -1409,6 +1409,67 @@ html {
   text-decoration: none;
   border-bottom: 1px solid #62799a;
 }
+.catalog {
+  padding: 0;
+  list-style: none;
+  margin: 0 -60px 0 0;
+}
+.catalog li {
+  float: left;
+  width: 258px;
+  height: 246px;
+  margin: 0 30px 20px 30px;
+}
+.catalog .catalog__img {
+  width: 258px;
+  height: 194px;
+  overflow: hidden;
+  border: 1px solid #999999;
+}
+.catalog .catalog__title {
+  color: #fff;
+  width: 100%;
+  height: 54px;
+  display: table;
+  font-size: 21px;
+  line-height: 24px;
+  background: #666666;
+}
+.catalog .catalog__title span {
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.catalog a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.catalog a:hover .catalog__img {
+  border-color: #2f405d;
+}
+.catalog a:hover .catalog__title {
+  background: #325271;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyNTI3MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMzE3M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #325271 0%, #03173b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #325271), color-stop(100%, #03173b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #325271 0%, #03173b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #325271 0%, #03173b 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #325271 0%, #03173b 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #325271 0%, #03173b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#325271', endColorstr='#03173b', GradientType=0);
+  /* IE6-8 */
+}
 .btn {
   color: #fff;
   border: none;

@@ -3,7 +3,8 @@
 $('.slide').slick({
     dots: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -43,10 +44,20 @@ $('.next2').click(function(){
 
 // Показ контента
 
-$('.rubbery__show').click(function(){
-    $('.rubbery__text_hide').slideToggle(250);
-    return false;
+$(".rubbery__show").click(function(){
+    $(".rubbery__text_hide").show('fast');
+    $(".rubbery__show").hide();
+    $(".rubbery__hide").show();
 });
+
+
+$(".rubbery__hide").click(function(){
+    $(".rubbery__text_hide").hide('fast');
+    $(".rubbery__hide").hide();
+    $(".rubbery__show").show();
+});
+
+
 
 
 // ----- Маска ----------
@@ -84,44 +95,8 @@ $(function(){
 });
 
 
-var russian = {
-    errorTitle: 'Form submission failed!',
-    requiredFields: 'Укажите ваше имя',
-    badTime: 'You have not given a correct time',
-    badEmail: 'Неверно указан e-mail адрес',
-    badTelephone: 'You have not given a correct phone number',
-    badSecurityAnswer: 'You have not given a correct answer to the security question',
-    badDate: 'Укажите дату!',
-    lengthBadStart: 'The input value must be between ',
-    lengthBadEnd: ' characters',
-    lengthTooLongStart: 'The input value is longer than ',
-    lengthTooShortStart: 'The input value is shorter than ',
-    notConfirmed: 'Input values could not be confirmed',
-    badDomain: 'Incorrect domain value',
-    badUrl: 'The input value is not a correct URL',
-    badCustomVal: 'The input value is incorrect',
-    andSpaces: ' and spaces ',
-    badInt: 'The input value was not a correct number',
-    badSecurityNumber: 'Your social security number was incorrect',
-    badUKVatAnswer: 'Incorrect UK VAT Number',
-    badStrength: 'The password isn\'t strong enough',
-    badNumberOfSelectedOptionsStart: 'You have to choose at least ',
-    badNumberOfSelectedOptionsEnd: ' answers',
-    badAlphaNumeric: 'The input value can only contain alphanumeric characters ',
-    badAlphaNumericExtra: ' and ',
-    wrongFileSize: 'The file you are trying to upload is too large (max %s)',
-    wrongFileType: 'Only files of type %s is allowed',
-    groupCheckedRangeStart: 'Please choose between ',
-    groupCheckedTooFewStart: 'Please choose at least ',
-    groupCheckedTooManyStart: 'Please choose a maximum of ',
-    groupCheckedEnd: ' item(s)',
-    badCreditCard: 'The credit card number is not correct',
-    badCVV: 'The CVV number was not correct'
-};
-
 $.validate({
-    form : '.form__callback',
-    language : 'russian'
+    form : '.form__callback, .form__contact'
 });
 
 
@@ -150,3 +125,6 @@ $(document).ready(function() {
         }
     });
 });
+
+
+$('.product_properties').tabs();

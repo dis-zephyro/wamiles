@@ -769,13 +769,13 @@ button.ui-button::-moz-focus-inner {
 	bottom: 0;
 }
 
-/* TR overrides */
+/* TR overrides
 .ui-spinner .ui-icon-triangle-1-s {
-	/* need to fix icons sprite */
+
 	background-position: -65px -16px;
 }
 .ui-tabs {
-	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	position: relative;
 	padding: .2em;
 }
 .ui-tabs .ui-tabs-nav {
@@ -815,6 +815,8 @@ button.ui-button::-moz-focus-inner {
 	padding: 1em 1.4em;
 	background: none;
 }
+
+*/
 .ui-tooltip {
 	padding: 8px;
 	position: absolute;
@@ -829,6 +831,7 @@ body .ui-tooltip {
 
 /* Component containers
 ----------------------------------*/
+/*
 .ui-widget {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 1.1em;
@@ -843,6 +846,7 @@ body .ui-tooltip {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 1em;
 }
+
 .ui-widget-content {
 	border: 1px solid #dddddd;
 	background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
@@ -851,6 +855,8 @@ body .ui-tooltip {
 .ui-widget-content a {
 	color: #444444;
 }
+
+
 .ui-widget-header {
 	border: 1px solid #dddddd;
 	background: #234372;
@@ -860,9 +866,10 @@ body .ui-tooltip {
 .ui-widget-header a {
 	color: #444444;
 }
-
+*/
 /* Interaction states
 ----------------------------------*/
+/*
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
@@ -899,6 +906,7 @@ body .ui-tooltip {
 	color: #ffffff;
 	text-decoration: none;
 }
+
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
@@ -913,7 +921,7 @@ body .ui-tooltip {
 	color: #ff0084;
 	text-decoration: none;
 }
-
+*/
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-highlight,
@@ -1183,7 +1191,7 @@ body .ui-tooltip {
 /* Misc visuals
 ----------------------------------*/
 
-/* Corner radius */
+/* Corner radius
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-left,
@@ -1202,12 +1210,14 @@ body .ui-tooltip {
 .ui-corner-bl {
 	border-bottom-left-radius: 2px;
 }
+
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
 	border-bottom-right-radius: 2px;
 }
+*/
 
 /* Overlays */
 .ui-widget-overlay {

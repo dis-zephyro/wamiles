@@ -4,7 +4,7 @@ $('.slide').slick({
     dots: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -48,6 +48,14 @@ $(".rubbery__show").click(function(){
     $(".rubbery__text_hide").show('fast');
     $(".rubbery__show").hide();
     $(".rubbery__hide").show();
+});
+
+// Фото
+
+$(".popup_img").fancybox({
+    "padding" : 0,
+    "maxWidth" : 800,
+    "maxHeight" : 600
 });
 
 

@@ -219,7 +219,7 @@ html {
 }
 .footer .footer__contact li {
   color: #c1c8d0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
 }
 .footer .footer__contact li.footer__name {
@@ -448,7 +448,7 @@ html {
 }
 .side-nav li ul a {
   color: #081e41;
-  padding-left: 39px;
+  padding-left: 29px;
   background: #c8d8ef;
   border-color: #c8d8ef;
 }
@@ -772,7 +772,7 @@ html {
 }
 .rubbery {
   color: #666;
-  font-size: 12px;
+  font-size: 14px;
   overflow: hidden;
   line-height: 18px;
   position: relative;
@@ -812,7 +812,7 @@ html {
   margin: 0 8px;
 }
 .promo .promo__large .promo__item {
-  height: 261px;
+  height: 263px;
   border-left: none;
   margin-bottom: 17px;
 }
@@ -834,7 +834,7 @@ html {
 .promo .promo__small li {
   float: left;
   width: 244px;
-  height: 122px;
+  height: 123px;
   margin: 0 8px 17px 8px;
 }
 .promo .promo__small .promo__link {
@@ -847,6 +847,7 @@ html {
   width: 100%;
   height: 100%;
   display: block;
+  overflow: hidden;
   background: #e2e2e2;
   border: 1px solid #999;
 }
@@ -898,8 +899,8 @@ html {
   color: #666;
   float: left;
   width: 262px;
-  height: 290px;
-  font-size: 12px;
+  height: 315px;
+  font-size: 14px;
   line-height: 18px;
   padding: 20px 12px;
   background: #f9f9f9;
@@ -962,7 +963,7 @@ html {
 .info-block .info .info__contact {
   padding-left: 30px;
   padding-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .news-line {
   height: 35px;
@@ -1383,10 +1384,9 @@ html {
   border-color: #102e5d;
   background: #102e5d url("../img/icon__slick.png") 0 0 no-repeat;
 }
-.best-block:hover .best__text h4 span {
+.best-block:hover .best__text h4 {
   color: #102e5d;
   font-weight: 600;
-  border-color: transparent;
 }
 .best-block .best-block-text {
   padding: 12px 85px 35px 12px;
@@ -1401,12 +1401,8 @@ html {
   padding: 12px 85px 35px 0;
 }
 .best-block .best__text h4 {
-  text-align: center;
-}
-.best-block .best__text h4 span {
   color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #62799a;
+  text-align: center;
 }
 .catalog {
   padding: 0;
@@ -1430,8 +1426,8 @@ html {
   width: 100%;
   height: 54px;
   display: table;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   background: #666666;
 }
 .catalog .catalog__title span {
@@ -1686,6 +1682,9 @@ html {
 .product .product_properties a:hover {
   border-color: #6e92c8;
 }
+.product .product_properties .tabs {
+  text-align: justify;
+}
 .work_schema {
   margin-bottom: 60px;
 }
@@ -1761,6 +1760,15 @@ html {
   line-height: 20px;
   font-weight: bold;
   position: absolute;
+}
+.ui-datepicker {
+  background: #f1f1f1;
+}
+.ui-datepicker .ui-datepicker-header {
+  background: #11294c;
+}
+.ui-datepicker .ui-datepicker-title {
+  color: #fff;
 }
 .btn {
   color: #fff;
@@ -1982,6 +1990,10 @@ h4 {
 p {
   padding: 0;
   margin: 0 0 10px 0;
+}
+a {
+  color: #102e5d;
+  text-decoration: underline;
 }
 nav ul {
   margin: 0;

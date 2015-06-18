@@ -185,7 +185,7 @@ html {
 
 		li {
 			color: #c1c8d0;
-			font-size: 12px;
+			font-size: 14px;
 			line-height: 16px;
 
 			&.footer__name {
@@ -423,7 +423,7 @@ html {
 
 			a {
 				color: #081e41;
-				padding-left: 39px;
+				padding-left: 29px;
 				background: #c8d8ef;
 				border-color: #c8d8ef;
 
@@ -787,7 +787,7 @@ html {
 
 .rubbery {
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	overflow: hidden;
 	line-height: 18px;
 	position: relative;
@@ -831,7 +831,7 @@ html {
 		margin: 0 8px;
 
 		.promo__item {
-			height: 261px;
+			height: 263px;
 			border-left: none;
 			margin-bottom: 17px;
 		}
@@ -858,7 +858,7 @@ html {
 		li {
 			float: left;
 			width: 244px;
-			height: 122px;
+			height: 123px;
 			margin: 0 8px 17px 8px;
 		}
 
@@ -875,6 +875,7 @@ html {
 		width: 100%;
 		height: 100%;
 		display: block;
+		overflow: hidden;
 		background: #e2e2e2;
 		border: 1px solid #999;
 	}
@@ -937,8 +938,8 @@ html {
 			color: #666;
 			float: left;
 			width: 262px;
-			height: 290px;
-			font-size: 12px;
+			height: 315px;
+			font-size: 14px;
 			line-height: 18px;
 			padding: 20px 12px;
 			background: #f9f9f9;
@@ -1016,7 +1017,7 @@ html {
 		.info__contact {
 			padding-left: 30px;
 			padding-right: 20px;
-			margin-bottom: 15px;
+			margin-bottom: 8px;
 		}
 	}
 }
@@ -1518,11 +1519,8 @@ html {
 
 		.best__text {
 			h4 {
-				span {
-					color: #102e5d;
-					font-weight: 600;
-					border-color: transparent;
-				}
+				color: #102e5d;
+				font-weight: 600;
 			}
 		}
 	}
@@ -1542,13 +1540,8 @@ html {
 		padding: 12px 85px 35px 0;
 
 		h4 {
+			color: #000;
 			text-align: center;
-
-			span {
-				color: #000;
-				text-decoration: none;
-				border-bottom: 1px solid #62799a;
-			}
 		}
 	}
 }
@@ -1577,8 +1570,8 @@ html {
 		width: 100%;
 		height: 54px;
 		display: table;
-		font-size: 21px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 20px;
 		background: #666666;
 
 		span {
@@ -1887,6 +1880,10 @@ html {
 				border-color: #6e92c8;
 			}
 		}
+
+		.tabs {
+			text-align: justify;
+		}
 	}
 }
 
@@ -1980,6 +1977,18 @@ html {
 		line-height: 20px;
 		font-weight: bold;
 		position: absolute;
+	}
+}
+
+.ui-datepicker {
+	background: #f1f1f1;
+
+	.ui-datepicker-header {
+		background: #11294c;
+	}
+
+	.ui-datepicker-title {
+		color: #fff;
 	}
 }
 
@@ -2245,7 +2254,8 @@ p {
 }
 
 a {
-
+	color: #102e5d;
+	text-decoration: underline;
 }
 
 nav ul {

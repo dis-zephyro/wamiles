@@ -4,6 +4,7 @@ $('.slide').slick({
     dots: true,
     arrows: false,
     autoplay: true,
+    infinite: true,
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1
@@ -50,19 +51,33 @@ $(".rubbery__show").click(function(){
     $(".rubbery__hide").show();
 });
 
+$(".rubbery__hide").click(function(){
+    $(".rubbery__text_hide").hide('fast');
+    $(".rubbery__hide").hide();
+    $(".rubbery__show").show();
+});
+
+
+
+$(".btn_best__show").click(function(){
+    $(".best_text_hide").show('fast');
+    $(".btn_best__show").hide();
+    $(".btn_best__hide").show();
+});
+
+$(".btn_best__hide").click(function(){
+    $(".best_text_hide").hide('fast');
+    $(".btn_best__hide").hide();
+    $(".btn_best__show").show();
+});
+
+
 // Фото
 
 $(".popup_img").fancybox({
     "padding" : 0,
     "maxWidth" : 800,
     "maxHeight" : 600
-});
-
-
-$(".rubbery__hide").click(function(){
-    $(".rubbery__text_hide").hide('fast');
-    $(".rubbery__hide").hide();
-    $(".rubbery__show").show();
 });
 
 

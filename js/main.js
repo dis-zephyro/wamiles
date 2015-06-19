@@ -1,4 +1,4 @@
-// РЎР»Р°Р№РґРµСЂС‹
+// Слайдеры
 
 $('.slide').slick({
     dots: true,
@@ -43,16 +43,16 @@ $('.next2').click(function(){
     $('.showcase__slider2').slick('slickNext');
 });
 
-// РџРѕРєР°Р· РєРѕРЅС‚РµРЅС‚Р°
+// Показ контента
 
 $(".rubbery__show").click(function(){
-    $(".rubbery__text_hide").show('fast');
+    $(".rubbery__text_hide").show();
     $(".rubbery__show").hide();
     $(".rubbery__hide").show();
 });
 
 $(".rubbery__hide").click(function(){
-    $(".rubbery__text_hide").hide('fast');
+    $(".rubbery__text_hide").hide();
     $(".rubbery__hide").hide();
     $(".rubbery__show").show();
 });
@@ -60,19 +60,19 @@ $(".rubbery__hide").click(function(){
 
 
 $(".btn_best__show").click(function(){
-    $(".best_text_hide").show('fast');
-    $(".btn_best__show").hide();
-    $(".btn_best__hide").show();
+    $(".best_text_hide").css('display','block');
+    $(".btn_best__show").css('display','none');
+    $(".btn_best__hide").css('display','block');
 });
 
 $(".btn_best__hide").click(function(){
-    $(".best_text_hide").hide('fast');
-    $(".btn_best__hide").hide();
-    $(".btn_best__show").show();
+    $(".best_text_hide").css('display','none');
+    $(".btn_best__hide").css('display','none');
+    $(".btn_best__show").css('display','block');
 });
 
 
-// Р¤РѕС‚Рѕ
+// Фото
 
 $(".popup_img").fancybox({
     "padding" : 0,
@@ -83,26 +83,26 @@ $(".popup_img").fancybox({
 
 
 
-// ----- РњР°СЃРєР° ----------
+// ----- Маска ----------
 jQuery(function($){
     $(".form__tel").mask("(999) 999-9999");
 });
 
 
-// ----- РљР°Р»РµРЅРґР°СЂСЊ ----------
+// ----- Календарь ----------
 $(function(){
     $.datepicker.regional['ru'] = {
-        closeText: 'Р—Р°РєСЂС‹С‚СЊ',
-        prevText: '&#x3c;РџСЂРµРґ',
-        nextText: 'РЎР»РµРґ&#x3e;',
-        currentText: 'РЎРµРіРѕРґРЅСЏ',
-        monthNames: ['РЇРЅРІР°СЂСЊ','Р¤РµРІСЂР°Р»СЊ','РњР°СЂС‚','РђРїСЂРµР»СЊ','РњР°Р№','РСЋРЅСЊ',
-            'РСЋР»СЊ','РђРІРіСѓСЃС‚','РЎРµРЅС‚СЏР±СЂСЊ','РћРєС‚СЏР±СЂСЊ','РќРѕСЏР±СЂСЊ','Р”РµРєР°Р±СЂСЊ'],
-        monthNamesShort: ['РЇРЅРІ','Р¤РµРІ','РњР°СЂ','РђРїСЂ','РњР°Р№','РСЋРЅ',
-            'РСЋР»','РђРІРі','РЎРµРЅ','РћРєС‚','РќРѕСЏ','Р”РµРє'],
-        dayNames: ['РІРѕСЃРєСЂРµСЃРµРЅСЊРµ','РїРѕРЅРµРґРµР»СЊРЅРёРє','РІС‚РѕСЂРЅРёРє','СЃСЂРµРґР°','С‡РµС‚РІРµСЂРі','РїСЏС‚РЅРёС†Р°','СЃСѓР±Р±РѕС‚Р°'],
-        dayNamesShort: ['РІСЃРє','РїРЅРґ','РІС‚СЂ','СЃСЂРґ','С‡С‚РІ','РїС‚РЅ','СЃР±С‚'],
-        dayNamesMin: ['Р’СЃ','РџРЅ','Р’С‚','РЎСЂ','Р§С‚','РџС‚','РЎР±'],
+        closeText: 'Закрыть',
+        prevText: '&#x3c;Пред',
+        nextText: 'След&#x3e;',
+        currentText: 'Сегодня',
+        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+            'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+            'Июл','Авг','Сен','Окт','Ноя','Дек'],
+        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
         dateFormat: 'dd.mm.yy',
         firstDay: 1,
         isRTL: false
@@ -126,20 +126,20 @@ $.validate({
 // menu --------
 
 $(document).ready(function() {
-// РЈРєР°Р·С‹РІР°РµРј РїРµСЂРµРјРµРЅРЅС‹Рµ
-    var accordion_head = $('.side-nav  li > a'),
+// Указываем переменные
+    var accordion_head = $('.side-nav > ul > li > a'),
         accordion_body = $('.side-nav li > .sub-menu');
 
-// Р¤СѓРЅРєС†РёСЏ РєР»РёРєР°
+// Функция клика
     accordion_head.on('click', function(event) {
-// РЎРєСЂС‹РІР°РµС‚ РѕС‚РєСЂС‹С‚С‹Р№ СЂР°Р·РґРµР» РїРѕ РїРѕРІС‚РѕСЂРЅРѕРјСѓ РєР»РёРєСѓ
+// Скрывает открытый раздел по повторному клику
         event.preventDefault();
         if ($(this).attr('class') == 'active'){
             accordion_body.slideUp('normal')
             $(this).removeClass('active');
             return false;
         }
-// РћС‚РєСЂС‹РІР°РµС‚ СЃР»РµРґСѓСЋС‰РёР№, СЃРєСЂС‹РІР°СЏ РѕС‚РєСЂС‹С‚С‹Р№
+// Открывает следующий, скрывая открытый
         if ($(this).attr('class') != 'active'){
             accordion_body.slideUp('normal');
             $(this).next().stop(true,true).slideToggle('normal');

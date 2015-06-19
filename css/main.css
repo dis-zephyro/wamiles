@@ -1194,7 +1194,7 @@ html {
   text-align: center;
   position: absolute;
   background: #ff9999;
-  content: "Обязательный этап";
+  content: "������������ ����";
 }
 .step.step-red {
   border-color: #c12026;
@@ -2041,4 +2041,12 @@ ul.unstyle {
   height: 100%;
   left: 0;
   top: 0;
+}
+.show {
+  display: block;
+  visibility: visible;
+}
+.hide {
+  display: none;
+  visibility: hidden;
 }

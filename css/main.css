@@ -1181,7 +1181,7 @@ html {
   position: absolute;
   background: url("../img/icon__step_time.png") 0 -100px no-repeat;
 }
-.step.step-required:after {
+.step .step__required {
   top: 13px;
   z-index: 20;
   color: #000;
@@ -1193,7 +1193,6 @@ html {
   text-align: center;
   position: absolute;
   background: #ff9999;
-  content: "������������ ����";
 }
 .step.step-red {
   border-color: #c12026;

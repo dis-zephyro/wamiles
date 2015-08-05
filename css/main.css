@@ -1696,18 +1696,20 @@ html {
   text-align: justify;
 }
 .work_schema {
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 .work_schema ul {
   padding: 0;
+  display: table;
   width: 1080px;
+  position: relative;
   margin: 0 0 0 40px;
   list-style: none;
 }
 .work_schema li {
-  float: left;
   width: 180px;
-  height: 183px;
+  display: table-cell;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -1726,21 +1728,25 @@ html {
   display: block;
 }
 .work_schema .work_schema__image {
-  height: 150px;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .work_schema .work_schema__name {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
   color: #234372;
   display: block;
   font-size: 14px;
+  position: absolute;
 }
 .work_schema .work_schema__hidden {
-  top: 70px;
+  top: 25px;
   left: 22px;
   color: #fff;
   width: 135px;
-  display: none;
   font-size: 12px;
   line-height: 20px;
   position: absolute;
@@ -1770,6 +1776,16 @@ html {
   line-height: 20px;
   font-weight: bold;
   position: absolute;
+}
+.work_schema.point-line ul:before {
+  z-index: 50;
+  right: 89px;
+  bottom: 80px;
+  width: 328px;
+  height: 52px;
+  content: " ";
+  position: absolute;
+  background: url("../img/point-line.png") 0 0 no-repeat;
 }
 .ui-datepicker {
   background: #f1f1f1;

@@ -1481,12 +1481,12 @@ html {
 }
 .product .left-col {
   float: left;
-  width: 275px;
+  width: 340px;
   padding: 5px 5px 0 23px;
 }
 .product .right-col {
   float: right;
-  width: 585px;
+  width: 520px;
   text-align: center;
 }
 .product .product__image {
@@ -1747,6 +1747,7 @@ html {
   left: 22px;
   color: #fff;
   width: 135px;
+  display: none;
   font-size: 12px;
   line-height: 20px;
   position: absolute;
@@ -1779,7 +1780,7 @@ html {
 }
 .work_schema.point-line ul:before {
   z-index: 50;
-  right: 89px;
+  right: 88px;
   bottom: 80px;
   width: 328px;
   height: 52px;

@@ -10,7 +10,7 @@
 @font-Futuris:'FuturisCyrillic-Regular';
 @font-FuturisBold:'Futuris-Bold';
 
-@container-padding : 75px;
+@container-padding : 50px;
 
 
 @import "mixing.less";
@@ -40,7 +40,7 @@ html {
 }
 
 .page {
-	width: 1282px;
+	width: 1240px;
 	margin: 0 auto;
 	border-left: 1px solid #22334f;
 	border-right: 1px solid #22334f;
@@ -831,11 +831,12 @@ html {
 
 	.promo__large {
 		float: left;
-		width: 760px;
+		width: 740px;
 		margin: 0 8px;
+		overflow: hidden;
 
 		.promo__item {
-			height: 263px;
+			height: 253px;
 			border-left: none;
 			margin-bottom: 17px;
 		}
@@ -849,9 +850,10 @@ html {
 	.promo__small {
 		margin: 0 8px;
 		padding: 0;
-		float: left;
-		width: 504px;
+		float: right;
+		width: 480px;
 		list-style: none;
+		overflow: hidden;
 
 		ul {
 			padding: 0;
@@ -861,9 +863,9 @@ html {
 
 		li {
 			float: left;
-			width: 244px;
-			height: 123px;
-			margin: 0 8px 17px 8px;
+			width: 232px;
+			height: 116px;
+			margin: 0 8px 19px 8px;
 		}
 
 		.promo__link {
@@ -1652,7 +1654,7 @@ html {
 
 	.product__detail {
 		padding: 0;
-		margin: 0 auto;
+		margin: 0 auto 20px auto;
 		text-align: center;
 
 		li {

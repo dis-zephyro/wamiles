@@ -127,7 +127,7 @@ $.validate({
 
 // menu --------
 
-$(document).ready(function() {
+$(document).ready(function () {
 // Указываем переменные
     var accordion_head = $('.side-nav > ul > li > a'),
         accordion_body = $('.side-nav li > .sub-menu');

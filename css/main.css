@@ -97,7 +97,7 @@ html {
   font-family: MyriadPro-Regular;
 }
 .page {
-  width: 1282px;
+  width: 1240px;
   margin: 0 auto;
   border-left: 1px solid #22334f;
   border-right: 1px solid #22334f;
@@ -107,7 +107,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  padding: 0 75px;
+  padding: 0 50px;
 }
 .header {
   color: #fff;
@@ -120,7 +120,7 @@ html {
   height: 60px;
   cursor: pointer;
   position: absolute;
-  left: 75px;
+  left: 50px;
   background: url("../img/header__logo.png") 0 0 no-repeat;
 }
 .header .header__phone {
@@ -129,7 +129,7 @@ html {
   height: 22px;
   padding-left: 20px;
   position: absolute;
-  right: 75px;
+  right: 50px;
   font: 22px/22px Verdana, Geneva, Arial, Helvetica, sans-serif;
   background: url("../img/header__phone.png") left center no-repeat;
 }
@@ -568,7 +568,7 @@ html {
   overflow: hidden;
   line-height: 26px;
   position: absolute;
-  padding: 49px 75px 0 75px;
+  padding: 49px 50px 0 50px;
 }
 .slider .slider__content p {
   padding-left: 40px;
@@ -582,8 +582,8 @@ html {
   line-height: 97px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  margin-left: -75px;
-  padding-left: 75px;
+  margin-left: -50px;
+  padding-left: 50px;
   background: url("../img/slider__shadow.png") 0 0 no-repeat;
 }
 .slider .slide__nav {
@@ -662,7 +662,7 @@ html {
   line-height: 35px;
   padding-left: 96px;
   text-transform: uppercase;
-  background: #e6e6e6 url("../img/square__blue.png") 75px center no-repeat;
+  background: #e6e6e6 url("../img/square__blue.png") 50px center no-repeat;
 }
 .showcase .showcase__title h3 {
   float: left;
@@ -756,11 +756,11 @@ html {
   text-align: center;
 }
 .showcase .showcase__nav.showcase__prev {
-  left: 75px;
+  left: 50px;
   background: #666666 url("../img/slider__nav.png") 0 0 no-repeat;
 }
 .showcase .showcase__nav.showcase__next {
-  right: 75px;
+  right: 50px;
   background: #666666 url("../img/slider__nav.png") -30px 0 no-repeat;
 }
 .gray-block {
@@ -807,11 +807,12 @@ html {
 }
 .promo .promo__large {
   float: left;
-  width: 760px;
+  width: 740px;
   margin: 0 8px;
+  overflow: hidden;
 }
 .promo .promo__large .promo__item {
-  height: 263px;
+  height: 253px;
   border-left: none;
   margin-bottom: 17px;
 }
@@ -821,9 +822,10 @@ html {
 .promo .promo__small {
   margin: 0 8px;
   padding: 0;
-  float: left;
-  width: 504px;
+  float: right;
+  width: 480px;
   list-style: none;
+  overflow: hidden;
 }
 .promo .promo__small ul {
   padding: 0;
@@ -832,9 +834,9 @@ html {
 }
 .promo .promo__small li {
   float: left;
-  width: 244px;
-  height: 123px;
-  margin: 0 8px 17px 8px;
+  width: 232px;
+  height: 116px;
+  margin: 0 8px 19px 8px;
 }
 .promo .promo__small .promo__link {
   background: #666666;
@@ -966,7 +968,7 @@ html {
 }
 .news-line {
   height: 35px;
-  padding: 0 75px;
+  padding: 0 50px;
   margin-bottom: 20px;
 }
 .news-line.news-blue {
@@ -1494,7 +1496,7 @@ html {
 }
 .product .product__detail {
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   text-align: center;
 }
 .product .product__detail li {

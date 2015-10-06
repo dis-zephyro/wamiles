@@ -2065,3 +2065,76 @@ ul.unstyle {
   display: none;
   visibility: hidden;
 }
+.brackets-box {
+  color: #333333;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 35px 50px;
+  position: relative;
+  background: #ededed;
+}
+.brackets-box:before {
+  top: 25px;
+  left: 18px;
+  width: 20px;
+  bottom: 25px;
+  content: " ";
+  position: absolute;
+  border: 6px solid #333333;
+  border-right: none;
+}
+.brackets-box:after {
+  top: 25px;
+  right: 18px;
+  width: 20px;
+  bottom: 25px;
+  content: " ";
+  position: absolute;
+  border: 6px solid #333333;
+  border-left: none;
+}
+.application {
+  margin-bottom: 30px;
+}
+.application .application-title {
+  color: #234372;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.application ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.application ul li {
+  float: left;
+  width: 33.33%;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.application ul li span {
+  display: block;
+}
+.application ul li .application-step-num {
+  width: 52px;
+  height: 52px;
+  padding: 1px 0;
+  color: #fff;
+  display: block;
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto 25px auto;
+  background: #333333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.application ul li.active .application-step-num {
+  background: #234372;
+}
